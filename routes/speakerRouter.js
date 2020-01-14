@@ -3,7 +3,6 @@ const speakerRouter = Router();
 const { Speaker } = require('../models.js');
 
 // index
-
 speakerRouter.get('/', async (req, res) => {
   const speakers = await Speaker.findAll();
   res.json({ speakers });
